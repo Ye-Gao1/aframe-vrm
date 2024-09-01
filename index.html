@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@v1.0.4/dist/aframe-master.min.js"></script>
+  <script src="https://binzume.github.io/aframe-vrm/dist/aframe-vrm.js"></script>
+  <script src="dist/extended-wasd-controls.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+  <a-scene keyboard-shortcuts="enterVR: false;">
+    <a-entity vrm="src:demo/assets/AliciaSolid/AliciaSolid.vrm;blink:true" vrm-anim="" rotation="0 180 0"></a-entity>
+    <a-entity environment="preset: forest; groundColor: #445; grid: cross"></a-entity>
+    <a-entity id="camera" camera
+      position="0 1.6 0"
+      extended-wasd-controls="flyEnabled: true; turnEnabled: true; lookEnabled: true; maxLookAngle: 60;">
+    </a-entity>
+  </a-scene>
+</body>
+</html>
+
